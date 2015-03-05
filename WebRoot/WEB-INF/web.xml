@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+	<!-- servlet文件配置 -->
+	<servlet>
+		<servlet-name>loginAction</servlet-name>
+		<servlet-class>user.LoginAction</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>deleteUserAction</servlet-name>
+		<servlet-class>user.DeleteUserAction</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>queryUserAction</servlet-name>
+		<servlet-class>user.QueryUserAction</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>saveOrUpdateUserAction</servlet-name>
+		<servlet-class>user.SaveOrUpdateUserAction</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>logoutAction</servlet-name>
+		<servlet-class>user.LogoutAction</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>queryStudentAction</servlet-name>
+		<servlet-class>student.QueryStudentAction</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>saveOrUpdateStudentAction</servlet-name>
+		<servlet-class>student.SaveOrUpdateStudentAction</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>deleteStudentAction</servlet-name>
+		<servlet-class>student.DeleteStudentAction</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>deleteDormAction</servlet-name>
+		<servlet-class>dorm.DeleteDormAction</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>queryDormAction</servlet-name>
+		<servlet-class>dorm.QueryDormAction</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>saveOrUpdateDormAction</servlet-name>
+		<servlet-class>dorm.SaveOrUpdateDormAction</servlet-class>
+	</servlet>
+	
+	
+	<servlet>
+		<servlet-name>deleteAssignAction</servlet-name>
+		<servlet-class>assign.DeleteAssignAction</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>queryAssignAction</servlet-name>
+		<servlet-class>assign.QueryAssignAction</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>queryUnDormAction</servlet-name>
+		<servlet-class>assign.QueryUnDormAction</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>queryUnStudentAction</servlet-name>
+		<servlet-class>assign.QueryUnStudentAction</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>saveAssignAction</servlet-name>
+		<servlet-class>assign.SaveAssignAction</servlet-class>
+	</servlet>
+	
+	
+	
+	<servlet>
+		<servlet-name>queryBianHaoAction</servlet-name>
+		<servlet-class>assign.QueryBianHaoAction</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>queryLouCengAction</servlet-name>
+		<servlet-class>assign.QueryLouCengAction</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>queryLouDongAction</servlet-name>
+		<servlet-class>assign.QueryLouDongAction</servlet-class>
+	</servlet>
+	
+	
+	
+	<!-- servlet文件对应界面URL配置 -->
+	<servlet-mapping>
+		<servlet-name>loginAction</servlet-name>
+		<url-pattern>/loginAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>deleteUserAction</servlet-name>
+		<url-pattern>/deleteUserAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>queryUserAction</servlet-name>
+		<url-pattern>/queryUserAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>saveOrUpdateUserAction</servlet-name>
+		<url-pattern>/saveOrUpdateUserAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>logoutAction</servlet-name>
+		<url-pattern>/logoutAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>queryStudentAction</servlet-name>
+		<url-pattern>/queryStudentAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>saveOrUpdateStudentAction</servlet-name>
+		<url-pattern>/saveOrUpdateStudentAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>deleteStudentAction</servlet-name>
+		<url-pattern>/deleteStudentAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>deleteDormAction</servlet-name>
+		<url-pattern>/deleteDormAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>queryDormAction</servlet-name>
+		<url-pattern>/queryDormAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>saveOrUpdateDormAction</servlet-name>
+		<url-pattern>/saveOrUpdateDormAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>deleteAssignAction</servlet-name>
+		<url-pattern>/deleteAssignAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>queryAssignAction</servlet-name>
+		<url-pattern>/queryAssignAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>queryUnDormAction</servlet-name>
+		<url-pattern>/queryUnDormAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>queryUnStudentAction</servlet-name>
+		<url-pattern>/queryUnStudentAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>saveAssignAction</servlet-name>
+		<url-pattern>/saveAssignAction</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>queryBianHaoAction</servlet-name>
+		<url-pattern>/queryBianHaoAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>queryLouCengAction</servlet-name>
+		<url-pattern>/queryLouCengAction</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>queryLouDongAction</servlet-name>
+		<url-pattern>/queryLouDongAction</url-pattern>
+	</servlet-mapping>
+</web-app>
